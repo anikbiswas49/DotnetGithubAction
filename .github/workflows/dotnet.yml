@@ -25,4 +25,8 @@ jobs:
       run: dotnet test --no-build --verbosity normal
     - name: Publish
       run: dotnet build -o ./build 
+    - name: copy docker file
+      run: cp ./Dockerfile ./build/Dockerfile
+    - name: Build docker image
+      run: docker build -t TestGitHubAction .
 
