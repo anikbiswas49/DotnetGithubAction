@@ -28,5 +28,5 @@ jobs:
     - name: copy docker file
       run: cp ./Dockerfile ./build/Dockerfile
     - name: Build docker image
-      run: docker build -t TestGitHubAction .
+      run: docker build -t testgithubaction .
 
